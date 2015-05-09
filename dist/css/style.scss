@@ -24,12 +24,12 @@ nav {
 		p {
 			margin: 0px auto;
 			display: inline;
-			font-size:0.7em;
+			font-size:1.2em;
 		}
 	}
 	> .navbar {
 		height:80px;
-		background:green;
+		background:$white;
 		> #logo {
 			background:$white;
 			width:60%;
@@ -58,9 +58,10 @@ nav {
 		padding-left:0px;
 		margin-top:0px;
 		margin-bottom:0px;
+		padding-top:30px;
 		li {
 			display: inline-block;
-			font-size:0.57em;
+			font-size:0.7em;
 			transform:scale(1,2);
 			-webkit-transform:scale(1,2);
 		    -moz-transform:scale(1,2);
@@ -69,10 +70,15 @@ nav {
 		}
 		a {
 			text-decoration: none;
-			color:$white;
+			color:#000;
 		}
-		a:below {
-			content: 'v';
+		a:after {
+			content: "\25BC";
+			color:gray;
+			font-size:0.4em;
+			position: absolute;
+			top:90%;
+			margin-left: -50%;
 		}
 	}
 	}

@@ -22,11 +22,11 @@ nav #free {
 nav #free p {
   margin: 0px auto;
   display: inline;
-  font-size: 0.7em; }
+  font-size: 1.2em; }
 
 nav > .navbar {
   height: 80px;
-  background: green; }
+  background: #FFF; }
 
 nav > .navbar > #logo {
   background: #FFF;
@@ -55,11 +55,12 @@ nav > .navbar > ul {
   width: 60%;
   padding-left: 0px;
   margin-top: 0px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  padding-top: 30px; }
 
 nav > .navbar > ul li {
   display: inline-block;
-  font-size: 0.57em;
+  font-size: 0.7em;
   transform: scale(1, 2);
   -webkit-transform: scale(1, 2);
   -moz-transform: scale(1, 2);
@@ -68,10 +69,15 @@ nav > .navbar > ul li {
 
 nav > .navbar > ul a {
   text-decoration: none;
-  color: #FFF; }
+  color: #000; }
 
-nav > .navbar > ul a:below {
-  content: 'v'; }
+nav > .navbar > ul a:after {
+  content: "\25BC";
+  color: gray;
+  font-size: 0.4em;
+  position: absolute;
+  top: 90%;
+  margin-left: -50%; }
 
 nav span {
   font-size: 0.5em;

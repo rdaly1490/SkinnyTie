@@ -90,16 +90,57 @@ nav {
 }
 
 .main {
-	border-top: 1px dotted gray;
-	div {
+	// border-image-source: url(../images/perforated-bottom@2x.png) 30 30 repeat;
+	// border-image-slice: 100%;
+	// border-image-width: 10px;
+	// border-image-outset: 0s;
+	// border-image-repeat: stretch;
+
+	#ties {
+		border-top: 5px solid;
+		border-image: url(../images/perforated-bottom@2x.png) 20 20 repeat;
 		height:510px;
-		background:blue;
+		background:#F4F4F4;
+		p {
+			height:20%;
+			margin:0;
+		}
 	}
+
+	#get-started {
+		height:30%;
+		#left-arrow {
+			height:60%;
+			width:20%;
+			float:left;
+		}
+		#right-arrow {
+			height:60%;
+			width:20%;
+			float:right;
+		}
+	}
+
+	#types {
+		height:50%;
+		background-image: url(../images/black@1.5x.jpg), url(../images/blue@1.5x.jpg), url(../images/collegiate@1.5x.jpg), url(../images/cotton@1.5x.jpg), url(../images/favorites@1.5x.jpg), url(../images/graphic@1.5x.jpg), url(../images/plaid@1.5x.jpg), url(../images/silk@1.5x.jpg), url(../images/striped@1.5x.jpg);
+		background-repeat:no-repeat;
+		background-position:left;
+		// background-size:100% 11%,100% 11%,100% 11%,100% 11%,100% 11%,100% 11%,100% 11%,100% 11%,100% 11%;
+	}
+
 	.non-ties {
 		height:400px;
 		background:gray;
 		margin:80px 30px 0px 30px;
+		> p {
+			font-size: 1.5em;
+			font-weight: bold;
+			text-align:right;
+			margin:0;
+		}
 	}
+
 	p {
 		font-size: 1em
 	}
@@ -107,6 +148,12 @@ nav {
 		text-decoration: none;
 	}
 }
+
+.main :nth-child(3) {
+		background: url(../images/bow-ties@1.5x.jpg) center;
+		background-size:cover;
+		background-repeat:no-repeat;
+	}
 
 footer {
 	border-top: 1px dotted gray;

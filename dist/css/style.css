@@ -84,23 +84,56 @@ nav span {
   color: #FFF;
   margin-right: 40%; }
 
-.main {
-  border-top: 1px dotted gray; }
-
-.main div {
+.main #ties {
+  border-top: 5px solid;
+  border-image: url(../images/perforated-bottom@2x.png) 20 20 repeat;
   height: 510px;
-  background: blue; }
+  background: #F4F4F4; }
+
+.main #ties p {
+  height: 20%;
+  margin: 0; }
+
+.main #get-started {
+  height: 30%; }
+
+.main #get-started #left-arrow {
+  height: 60%;
+  width: 20%;
+  float: left; }
+
+.main #get-started #right-arrow {
+  height: 60%;
+  width: 20%;
+  float: right; }
+
+.main #types {
+  height: 50%;
+  background-image: url(../images/black@1.5x.jpg), url(../images/blue@1.5x.jpg), url(../images/collegiate@1.5x.jpg), url(../images/cotton@1.5x.jpg), url(../images/favorites@1.5x.jpg), url(../images/graphic@1.5x.jpg), url(../images/plaid@1.5x.jpg), url(../images/silk@1.5x.jpg), url(../images/striped@1.5x.jpg);
+  background-repeat: no-repeat;
+  background-position: left; }
 
 .main .non-ties {
   height: 400px;
   background: gray;
   margin: 80px 30px 0px 30px; }
 
+.main .non-ties > p {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: right;
+  margin: 0; }
+
 .main p {
   font-size: 1em; }
 
 .main a {
   text-decoration: none; }
+
+.main :nth-child(3) {
+  background: url(../images/bow-ties@1.5x.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 footer {
   border-top: 1px dotted gray; }
